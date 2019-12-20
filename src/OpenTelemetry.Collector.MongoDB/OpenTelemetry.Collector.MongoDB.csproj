@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>OpenTelemetry collector for MongoDB calls made by MongoDB.Driver library.</Description>
+    <PackageTags>$(PackageTags);distributed-tracing;Mongo;MongoDB;MongoDB.Driver</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <NoWarn>$(NoWarn),8002</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpenTelemetry\OpenTelemetry.csproj" />
+    <PackageReference Include="mongodb.driver" Version="2.10.0" />
+  </ItemGroup>
+</Project>
